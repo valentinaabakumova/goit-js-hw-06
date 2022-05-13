@@ -4,13 +4,14 @@ function getRandomHexColor() {
 
 const box = document.querySelector("#boxes");
 const controls = document.querySelector("#controls");
-let amount = controls.firstChild.textContent;
-
+// let amount = controls.firstChild.textContent;
 const butCreate = document.querySelector("button[data-create]");
 const butDestroy = document.querySelector("button[data-destroy]");
 
-const createBoxes = (amount) => {
-  console.log(amount);
-};
+butCreate.addEventListener("click", () => {
+  console.log("gogogo");
+});
 
-const destroyBoxes = () => {};
+butDestroy.addEventListener("click", () => {
+  console.log("oooo");
+});
