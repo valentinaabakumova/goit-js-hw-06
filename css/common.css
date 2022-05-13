@@ -35,3 +35,16 @@ button {
   display: flex;
   margin-right: 10px;
 }
+
+/*  task 10 */
+
+.boxEl {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  border-color: black;
+  border-width: 1px;
+  border-style: groove;
+  margin-bottom: 5px;
+}
