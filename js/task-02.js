@@ -23,11 +23,22 @@ const ingredients = [
 
 //////////
 
-let list = document.getElementById("ingredients");
-const recepy = ingredients.forEach((ingredient) => {
-  let item = document.createElement("li");
-  item.classList.add("item");
-  item.textContent = ingredient;
-  item.innerHTML = ingredient;
-  list.append(item);
+let ul = document.getElementById("ingredients");
+let list;
+const recepy = ingredients.map((ingredient) => {
+  let li = document.createElement("li");
+  li.classList.add("item");
+
+  li.textContent = `${ingredient}`;
+  // li.innerHTML = ingredient;
+  console.log(li);
+  // li.innerHTML += li;
+  // list += li;
+  // console.log(list);
+  // return list;
+
+  return li;
 });
+
+ul.append(...recepy);
+console.log(ul);

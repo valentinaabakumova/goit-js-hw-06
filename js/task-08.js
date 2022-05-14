@@ -10,10 +10,7 @@ form.addEventListener("submit", (event) => {
     return alert("Агов! Усі поля, будь ласка :)");
   }
 
-  const mail = email.value;
-  const pass = password.value;
-
   //console.log(`Email: ${email.value}, Password: ${password.value}`);
-  console.log(mail, pass);
+  console.log(event.currentTarget.elements);
   event.currentTarget.reset();
 });
